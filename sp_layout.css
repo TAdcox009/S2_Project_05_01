@@ -30,6 +30,7 @@ body {
     min-height: 100%;
 }
 
+/* this applies a border box to the listed elements */
 header,
 ul,
 nav,
@@ -40,6 +41,7 @@ a {
     box-sizing: border-box;
 }
 
+/* it expands the element to cover any floating content within the element */
 /* Row Styles */
 .row::after {
     clear: both;
@@ -47,6 +49,7 @@ a {
     display: table;
 }
 
+/* this displays the image in the header as a block, its setting the width to 70% and it makes the image float on the left margin */
 /* Page Header Styles */
 body header img {
     display: block;
@@ -54,6 +57,7 @@ body header img {
     float: left;
 }
 
+/* this is floating the element to the left and its adding 2% padding to both the left and right side of the element */
 header nav {
     float: left;
     padding-left: 2%;
@@ -61,17 +65,23 @@ header nav {
     width: 30%;
 }
 
+/* displays all elements inside the header navigation list to display as a block with a width of 100% */
 header nav a {
     display: block;
     width: 100%;
 }
 
+/* this is floating it to the left, it displays them as blocks, and sets the width to 12.5% */
 /* Horizontal Navigation List Styles */
 nav.horizontal li {
     display: block;
     width: 12.5%;
     float: left;
 }
+
+/* this is displaying the items as blocks and setting the width to 20%,
+its floating the items to the
+left, as well as setting the size of the left margin to 0% and the right margin to 1.5% */
 
 /* Topics Styles */
 ul#topics li {
@@ -82,14 +92,17 @@ ul#topics li {
     margin-right: 1.5%;
 }
 
+/* this is setting the first item in the topics list to 7.75% */
 ul#topics li:first-of-type {
     margin-left: 7.75%;
 }
 
+/* this is setting the last item in the topics list to 7.75% */
 ul#topics li:last-of-type {
     margin-right: 7.75%;
 }
 
+/* this is setting all the images inside all the list items as blocks with a 50% width, and its centering it within the list item block */
 ul#topics li img {
     margin-left: auto;
     margin-right: auto;
@@ -97,10 +110,13 @@ ul#topics li img {
     width: 50%;
 }
 
+/* this is adding a horizontal divider between the page */
 /* HR Styles */
 hr {
     width: 50%;
 }
+
+/* width to 75%, setting the top and bottom margin to 40px, and setting the margin left and right to auto */
 
 /* Customer Comment Styles */
 ul#comments {
@@ -111,12 +127,16 @@ ul#comments {
     margin-right: auto;
 }
 
+/* displays the items as blocks  with a width of 50%, floating it to the left and setting the bottom margin to 30 pixels */
+
 ul#comments li {
     display: block;
     width: 50%;
     float: left;
     margin-bottom: 30px;
 }
+
+/* this is setting the image within each comment list item as a block with a width of 20% floated to the left, with a left and right margin of 5% */
 
 ul#comments li {
     display: block;
@@ -126,11 +146,13 @@ ul#comments li {
     margin-right: 5%;
 }
 
+/* floating the element to the left with a width of 70% */
 ul#comments li p {
     float: left;
     width: 70%;
 }
 
+/* this is displaying the footer when both margins are cleared of floating objects */
 /* Footer Styles */
 footer {
     clear: both;
